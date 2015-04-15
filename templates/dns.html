@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="page-header">  <h1>DNS 添加 <small>(例:localhost  127.0.0.1)</small></h1></div>
+ <form id="dns_id" method='post' action="sub" class="navbar-form navbar-left" role="search">
+<p id="errorMsg" class="text-danger"></p>
+  <div class="form-group">
+ <textarea placeholder="Hostname IP" id="ips"  name="ips" class="col-xs-8"  required="required"></textarea>
+ </div>
+<p> </p>
+  <button type="submit" class="btn btn-primary col-md-offset-4 col-md-3">提交</button>
+</form>
+<script src="{{ url_for('static',filename='js/dns.js')  }}"></script>
+{% endblock %}

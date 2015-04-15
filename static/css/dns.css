@@ -1,0 +1,12 @@
+.modify-btn{
+  cursor: pointer;
+  color: blue;
+}
+#login{
+   margin-top: 180px;
+
+}
+#ips{
+   width: 700px; 
+   height: 290px;
+}
