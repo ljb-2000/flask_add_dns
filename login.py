@@ -30,7 +30,7 @@ def login():
     if request.method == 'POST':
         username = request.form.get('username')
         passwd = request.form.get('passwd')
-        if username == "admin" and  passwd == "admin#%^&*":
+        if username == "admin" and  passwd == "admin":
             session[username] = username
             return redirect('/add_dns')
 
